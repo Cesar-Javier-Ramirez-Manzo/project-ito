@@ -1,10 +1,21 @@
-#dino{
+#vaca{
     margin-top: 160px;
     margin-left: 520px;
-    width: 225px;
+    width: 200px;
 
 }
-
 #escritura{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bg{
+    background-image: url('./bg.png');
+}
+
+section{
+    text-align: center;
+    margin-top: 200px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
 }

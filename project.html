@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
     <script src="./project.js"></script>
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-             
- 
-    <link rel="stylesheet" href="project.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <link rel="stylesheet" href="./project.css">
 </head>
-<body>
 
+<body class="bg">
 
-    <div id="escritura">
-        <h5 id="texto">Escribe</h5>
-        <textarea name="interface" id="interfaz" cols="30" rows="10" placeholder="Dile a la vaca a donde ir"></textarea>
-    </div>
+    <br>
+    <section class="card container">
+        <div id="escritura">
+            <h5 id="texto">Escríbele naturalmente a la vaca a dónde ir</h5>
+            <textarea name="interface" id="interfaz" cols="30" rows="10"
+                placeholder="Dile a la vaca a donde ir"></textarea>
+        </div>
+    </section>
     <div>
-        <img id="dino" src="vaca.png" alt="">
+        <img id="vaca" src="vaca.png" alt="vaca">
     </div>
-    
-    
+
 </body>
+
 </html>
