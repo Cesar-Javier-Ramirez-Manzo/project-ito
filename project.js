@@ -2,7 +2,9 @@ var indiceBu=0
 var cont=0
 var subca;
 var acces=false;
+
 var cantidad = 1;
+
 
 document.addEventListener('keyup', (evento)=>{
     var dinosaurio= document.getElementById('vaca')
@@ -43,15 +45,19 @@ document.addEventListener('keyup', (evento)=>{
             var direccion=subca.search("hacia");
             var direccion1=subca.search("a la");
             var direccion2=subca.search("para");
+
             var pixeles = 50 * cantidad;
+
 
     
             if(direccion!=-1||direccion1!=-1||direccion2!=-1){
                 var arriba=subca.search("arriba");
                 if(arriba!=-1){
                 
+
                 console.log(pixeles);
                 var newDir=(parseInt(dinStyle.getPropertyValue('margin-top'))-pixeles)+"px";
+
                 dinosaurio.style.marginTop= newDir 
                 indiceBu=indiceBu+arriba+6
                 cont++
@@ -60,7 +66,9 @@ document.addEventListener('keyup', (evento)=>{
                 var abajo=subca.search("abajo");
                 if(abajo!=-1){
                 
+
                     var newDir=(parseInt(dinStyle.getPropertyValue('margin-top'))+pixeles)+"px";
+
                     dinosaurio.style.marginTop= newDir 
                     indiceBu=indiceBu+abajo+5
                     cont++
@@ -69,7 +77,10 @@ document.addEventListener('keyup', (evento)=>{
                 var dere=subca.search("derecha");
                 if(dere!=-1){
                 
+
                     var newDir=(parseInt(dinStyle.getPropertyValue('margin-left'))+pixeles)+"px";
+
+                   
                     dinosaurio.style.marginLeft= newDir 
                     indiceBu=indiceBu+dere+7
                     cont++
@@ -77,7 +88,10 @@ document.addEventListener('keyup', (evento)=>{
                 var izquierda=subca.search("izquierda");
                 if(izquierda!=-1){
                 
+
                     var newDir=(parseInt(dinStyle.getPropertyValue('margin-left'))-pixeles)+"px";
+
+                 
                     dinosaurio.style.marginLeft= newDir 
                     indiceBu=indiceBu+izquierda+9
                     cont++
